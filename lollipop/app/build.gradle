@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion rootProject.ext.compile
+    buildToolsVersion rootProject.ext.buildTools
+
+    defaultConfig {
+        applicationId "com.pacific.lollipop"
+        minSdkVersion rootProject.ext.min
+        targetSdkVersion rootProject.ext.target
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        if (dx.additionalParameters == null) {
+            dx.additionalParameters = []
+        }
+        // enable multiDex
+        dx.additionalParameters += '--multi-dex'
+        // optional
+        // dx.additionalParameters += "--main-dex-list=$projectDir/<filename>".toString() // enable the main-dex-list
+    }
+}
+
+retrolambda {
+    jdk System.getenv("JAVA8_HOME")
+    oldJdk System.getenv("JAVA6_HOME")
+    javaVersion JavaVersion.VERSION_1_6
+    jvmArgs '-arg1', '-arg2'
+    defaultMethods false
+    incremental true
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
+    compile "com.github.thepacific:adapter:$rootProject.ext.adapter"
+    compile "com.github.thepacific:mvc:$rootProject.ext.mvc"
+    compile "com.android.support:palette-v7:$rootProject.ext.support"
+    compile "com.android.support:design:$rootProject.ext.support"
+    compile "com.android.support:cardview-v7:$rootProject.ext.support"
+    compile "com.android.support:appcompat-v7:$rootProject.ext.support"
+    compile ('com.github.ozodrukh:CircularReveal:1.3.1') {
+        transitive = true;
+    }
+}
+
