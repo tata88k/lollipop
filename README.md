@@ -1,2 +1,2 @@
 # lollipop
-action in new and popular technology for android development.
+action in popular technology for android development.
