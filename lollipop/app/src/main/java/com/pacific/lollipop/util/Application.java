@@ -1,4 +1,4 @@
-package com.pacific.lollipop;
+package com.pacific.lollipop.util;
 
 import android.support.multidex.MultiDexApplication;
 

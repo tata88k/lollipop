@@ -1,8 +1,8 @@
-package com.pacific.lollipop.view;
+package com.pacific.lollipop.mvc.view;
 
 import android.view.View;
 
-import com.pacific.lollipop.controller.LoginActivity;
+import com.pacific.lollipop.mvc.controller.LoginActivity;
 import com.pacific.mvc.ActivityMVCView;
 
 /**

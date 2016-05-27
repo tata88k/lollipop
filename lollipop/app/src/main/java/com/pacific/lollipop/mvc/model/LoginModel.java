@@ -1,6 +1,6 @@
-package com.pacific.lollipop.model;
+package com.pacific.lollipop.mvc.model;
 
-import com.pacific.lollipop.view.LoginView;
+import com.pacific.lollipop.mvc.view.LoginView;
 import com.pacific.mvc.ActivityMVCModel;
 
 /**
