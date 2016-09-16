@@ -15,3 +15,30 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+##glide
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
+
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep class com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
+
+-keep class rx.** {
+    *;
+}
+
+-keep class okhttp3.** {
+    *;
+}
+
+-keep class okio.** {
+    *;
+}
+
+-dontwarn android.support.**
+-keep class android.support.** {
+    *;
+}

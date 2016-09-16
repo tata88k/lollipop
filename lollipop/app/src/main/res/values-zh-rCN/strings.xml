@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">甘蔗糖</string>
+    <string name="login">登录</string>
+    <string name="name">用户名</string>
+    <string name="password">密码</string>
+    <string name="register">注册</string>
+    <string name="repeat_password">再次输入密码</string>
+    <string name="next">下一步</string>
+    <string name="go">确定</string>
+</resources>

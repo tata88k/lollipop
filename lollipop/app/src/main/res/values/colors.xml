@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-
-    <color name="material_login_login_color">#FFFFFF</color>
-    <color name="material_login_register_color">#FF4081</color>
-    <color name="material_login_login_error_color">#ff5151</color>
-    <color name="material_login_register_error_color">#ffcdce</color>
-    <color name="material_login_login_text_color">#000</color>
-    <color name="material_login_register_text_color">#000</color>
+    <color name="primary">#795548</color>
+    <color name="primary_dark">#5D4037</color>
+    <color name="primary_light">#D7CCC8</color>
+    <color name="accent">#795548</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
 </resources>

@@ -1,12 +1,12 @@
-package com.pacific.lollipop.util;
+package com.pacific.lollipop;
 
 import android.support.multidex.MultiDexApplication;
 
 /**
  * Created by root on 16-3-26.
  */
-public class Application extends MultiDexApplication {
-    private static Application mInstance;
+public class App extends MultiDexApplication {
+    private static App mInstance;
 
     @Override
     public void onCreate() {
@@ -14,7 +14,7 @@ public class Application extends MultiDexApplication {
         mInstance = this;
     }
 
-    public synchronized static Application getInstance() {
+    public static App getInstance() {
         return mInstance;
     }
 }

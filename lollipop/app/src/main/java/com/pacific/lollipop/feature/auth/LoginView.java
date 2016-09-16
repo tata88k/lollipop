@@ -1,14 +1,13 @@
-package com.pacific.lollipop.mvc.view;
+package com.pacific.lollipop.feature.auth;
 
 import android.view.View;
 
-import com.pacific.lollipop.mvc.controller.LoginActivity;
-import com.pacific.mvc.ActivityMVCView;
+import com.pacific.mvc.ActivityView;
 
 /**
  * Created by root on 16-3-27.
  */
-public class LoginView extends ActivityMVCView<LoginActivity> {
+public class LoginView extends ActivityView<LoginActivity> {
     public LoginView(LoginActivity activity) {
         super(activity);
     }
@@ -24,7 +23,7 @@ public class LoginView extends ActivityMVCView<LoginActivity> {
     }
 
     @Override
-    protected void setAdapter() {
+    protected void setAdapter(Object... adapters) {
 
     }
 
