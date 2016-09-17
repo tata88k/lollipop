@@ -16,6 +16,7 @@
     <dimen name="dp32">32dp</dimen>
     <dimen name="dp56">56dp</dimen>
     <dimen name="dp64">64dp</dimen>
+    <dimen name="dp96">96dp</dimen>
     <dimen name="dp128">128dp</dimen>
 
     <dimen name="font12">12sp</dimen>
