@@ -3,6 +3,6 @@
     <dimen name="activity_horizontal_margin">@dimen/dp16</dimen>
     <dimen name="activity_vertical_margin">@dimen/dp16</dimen>
 
-
+    <!--SplashActivity-->
 
 </resources>

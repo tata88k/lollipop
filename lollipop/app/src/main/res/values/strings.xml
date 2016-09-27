@@ -1,10 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lollipop</string>
-    <string name="login">LOGIN</string>
-    <string name="name">Name</string>
-    <string name="password">Password</string>
-    <string name="register">REGISTER</string>
-    <string name="repeat_password">Repeat Password</string>
-    <string name="next">NEXT</string>
-    <string name="go">GO</string>
+    <!--SplashActivity>-->
+    <string name="alert_exit_title">温性提示</string>
+    <string name="alert_exit_msg">内部发生错误，应用程序将自动退出.</string>
+    <string name="alert_exit_positive">确定</string>
+
+    <string name="title_canteen_intro1">快乐时刻在指尖</string>
+    <string name="title_canteen_intro2">分享更具有意义</string>
+    <string name="title_canteen_intro3">印象生活</string>
+    <string name="description_canteen_intro1">一群志同道合的人，寻找快乐的源头，只要心怀感恩，快乐就无处不在</string>
+    <string name="description_canteen_intro2">独乐乐，不如众乐乐，造起来吧，让我们一起感受生活的美好</string>
+    <string name="description_canteen_intro3">好记忆不如烂笔头，记录生活点滴，印象生活，享受轻奢</string>
+    <string name="get_start">开始</string>
+
+    <string name="login">登录账号</string>
+    <string name="register">创建用户</string>
+    <string name="repeat_password">再次输入密码</string>
+    <string name="go">确定</string>
+
+    <string name="hint_password">Password</string>
+    <string name="hint_username">Phone or Email</string>
 </resources>

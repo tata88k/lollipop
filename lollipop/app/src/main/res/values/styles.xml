@@ -1,20 +1,73 @@
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="android:textColorPrimary">@color/primary_text</item>
         <item name="colorAccent">@color/accent</item>
         <item name="android:divider">@color/divider</item>
         <item name="android:dividerHeight">@dimen/dp05</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
     </style>
 
-    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimaryDark">@color/primary</item>
         <item name="android:windowBackground">@drawable/splash_bg</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
     </style>
 
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ButtonAppTheme" parent="wrap_wrap">
+        <item name="android:minWidth">@dimen/dp56</item>
+        <item name="android:background">@drawable/btn_primary_states</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="input_icon">
+        <item name="android:layout_width">@dimen/dp24</item>
+        <item name="android:layout_height">@dimen/dp24</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="input_wrap_layout" parent="match_wrap">
+        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="input_edit" parent="match_match">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dp4</item>
+        <item name="android:paddingRight">@dimen/dp4</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
 
 </resources>

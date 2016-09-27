@@ -3,9 +3,32 @@
     <color name="primary">#4CAF50</color>
     <color name="primary_dark">#388E3C</color>
     <color name="primary_light">#C8E6C9</color>
-    <color name="accent">#4CAF50</color>
+    <color name="accent">#8BC34A</color>
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#757575</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
+
+    <!--TutorialActivity-->
+    <color name="color_green">@color/primary</color>
+    <color name="color_dark_green">@color/primary_dark</color>
+
+
+    <color name="dark_green">#ff005e37</color>
+    <color name="tb_dark_green">#ff005e37</color>
+    <color name="tier_confirmation_background_premium">#f52dbe60</color>
+    <color name="tier_confirmation_background_team_pack">#f52dbe60</color>
+    <color name="top_banner_green_color">#ff0a6037</color>
+    <color name="tutorial_green">#ff2ebe61</color>
+    <color name="upsell_button_pressed">#cc37b34b</color>
+    <color name="v6_green">#ff2dbe60</color>
+    <color name="v6_green_dark">#ff247d42</color>
+    <color name="v6_green_pressed">#ff1e9e47</color>
+
+    <!--drawable color-->
+    <item name="drawable_transparent" type="drawable">@android:color/transparent</item>
+    <item name="drawable_primary" type="drawable">@color/primary</item>
+    <item name="drawable_accent" type="drawable">@color/accent</item>
+    <item name="drawable_white" type="drawable">@android:color/white</item>
+
 </resources>

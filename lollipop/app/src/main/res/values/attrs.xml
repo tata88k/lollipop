@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <declare-styleable name="MaterialLoginView">
-        <attr name="loginTitle" format="string" />
-        <attr name="loginHint" format="string" />
-        <attr name="loginPasswordHint" format="string" />
-        <attr name="loginActionText" format="string" />
-        <attr name="loginTextColor" format="reference" />
-
-        <attr name="registerTitle" format="string" />
-        <attr name="registerHint" format="string" />
-        <attr name="registerPasswordHint" format="string" />
-        <attr name="registerRepeatPasswordHint" format="string" />
-        <attr name="registerActionText" format="string" />
-        <attr name="registerTextColor" format="reference" />
-        <attr name="registerIcon" format="reference" />
+    <declare-styleable name="InputView">
+        <attr name="input_drawable" format="reference"></attr>
+        <attr name="input_hint" format="string"></attr>
+        <attr name="input_hint_color" format="color"></attr>
+        <attr name="focused_indicator_color" format="color"></attr>
+        <attr name="normal_indicator_color" format="color"></attr>
+        <attr name="clear_icon_visibility" format="boolean"></attr>
+        <attr name="eyes_icon_visibility" format="boolean"></attr>
     </declare-styleable>
 </resources>

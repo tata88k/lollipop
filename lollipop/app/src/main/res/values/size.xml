@@ -14,12 +14,17 @@
     <dimen name="dp18">18dp</dimen>
     <dimen name="dp24">24dp</dimen>
     <dimen name="dp32">32dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp42">42dp</dimen>
+    <dimen name="dp48">48dp</dimen>
     <dimen name="dp56">56dp</dimen>
     <dimen name="dp64">64dp</dimen>
     <dimen name="dp96">96dp</dimen>
     <dimen name="dp128">128dp</dimen>
+    <dimen name="dp144">144dp</dimen>
 
     <dimen name="font12">12sp</dimen>
+    <dimen name="font13">13sp</dimen>
     <dimen name="font14">14sp</dimen>
     <dimen name="font16">16sp</dimen>
     <dimen name="font18">18sp</dimen>
