@@ -8,6 +8,9 @@
     <color name="secondary_text">#757575</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
+    <color name="third_text">#ff8c8c8c</color>
+    <color name="light_gray">#ff656565</color>
+
 
     <!--TutorialActivity-->
     <color name="color_green">@color/primary</color>
@@ -29,6 +32,7 @@
     <item name="drawable_transparent" type="drawable">@android:color/transparent</item>
     <item name="drawable_primary" type="drawable">@color/primary</item>
     <item name="drawable_accent" type="drawable">@color/accent</item>
+    <item name="drawable_secondary_text" type="drawable">@color/secondary_text</item>
     <item name="drawable_white" type="drawable">@android:color/white</item>
 
 </resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_match"
+    android:scrollbars="none"
+    tools:context="com.pacific.lollipop.feature.auth.AuthCodeFragment">
+
+    <LinearLayout
+        style="@style/match_match"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dp32">
+
+        <RelativeLayout
+            style="@style/input_wrap_layout"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/img_left"
+                style="@style/input_icon"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_email" />
+
+            <AutoCompleteTextView
+                android:id="@+id/ac_email"
+                style="@style/input_edit"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_clear"
+                android:layout_toRightOf="@+id/img_left"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress" />
+
+            <ImageView
+                android:id="@+id/img_clear"
+                style="@style/input_icon"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_clear" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp05"
+                android:layout_alignParentBottom="true"
+                android:background="@color/light_gray" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/input_wrap_layout">
+            android:layout_marginTop="@dimen/dp16">
+
+            <ImageView
+                android:id="@+id/img_left0"
+                style="@style/input_icon"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_email"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/edit_code"
+                style="@style/input_edit"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_code"
+                android:layout_toRightOf="@+id/img_left0"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_code"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/btn_code"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/get_code" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp05"
+                android:layout_alignParentBottom="true"
+                android:background="@color/light_gray" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            style="@style/match_wrap"
+            android:layout_marginTop="@dimen/dp16"
+            android:gravity="center"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/font13" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/ButtonAppTheme"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp16"
+            android:text="@string/next" />
+
+        <include
+            android:id="@+id/already_have_account_view"
+            layout="@layout/already_have_account" />
+
+        <TextView
+            android:id="@+id/tv_popup"
+            style="@style/wrap_wrap"
+            android:background="@drawable/register_error_bg"
+            android:gravity="center"
+            android:padding="@dimen/dp16"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font13"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

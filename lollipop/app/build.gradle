@@ -1,6 +1,4 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'me.tatarka.retrolambda'
-//apply plugin: 'com.neenbedankt.android-apt'
 
 android {
 
@@ -10,20 +8,18 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.min
         targetSdkVersion rootProject.ext.target
-
         applicationId "com.pacific.lollipop"
         versionCode 1
         versionName "0.0.1"
-//        multiDexEnabled true
-        jackOptions{
+        jackOptions {
             enabled true
         }
     }
 
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
+            minifyEnabled false
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -34,10 +30,9 @@ android {
     }
 }
 
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-
-    compile "com.android.support:multidex:$rootProject.ext.multidex"
     compile "com.android.support:palette-v7:$rootProject.ext.support"
     compile "com.android.support:design:$rootProject.ext.support"
     compile "com.android.support:cardview-v7:$rootProject.ext.support"
@@ -46,6 +41,7 @@ dependencies {
     compile "com.github.thepacific:adapter:$rootProject.ext.adapter"
     compile "com.github.thepacific:mvc:$rootProject.ext.mvc"
 
+    provided "org.glassfish:javax.annotation:$rootProject.ext.annotation"
     compile "com.google.dagger:dagger:$rootProject.ext.dagger2"
     annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.ext.dagger2"
 
@@ -66,7 +62,5 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha5'
     compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
     compile 'com.heinrichreimersoftware:material-intro:1.5.8'
-
-    provided 'org.glassfish:javax.annotation:10.0-b28'
-//    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:2.3.0'
+    compile 'com.binaryfork:spanny:1.0.4'
 }

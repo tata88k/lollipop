@@ -18,6 +18,27 @@
     <string name="repeat_password">再次输入密码</string>
     <string name="go">确定</string>
 
-    <string name="hint_password">Password</string>
-    <string name="hint_username">Phone or Email</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_email">邮箱或电话</string>
+    <string name="hint_code">验证码</string>
+    <string name="title_activity_eectivity">Sign in</string>
+    <string name="next">下一步</string>
+    <string name="get_code">获取验证码</string>
+    <string name="agreement">创建帐户，表示您同意服务条款和隐私条款。</string>
+    <string name="agreement1">服务条款</string>
+    <string name="agreement2">隐私条款</string>
+    <string name="already_have_account">已经拥有帐户？</string>
+    <string name="sign_in">登录</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email or Phone</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
 </resources>

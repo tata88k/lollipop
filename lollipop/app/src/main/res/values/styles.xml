@@ -54,20 +54,27 @@
 
     <style name="input_wrap_layout" parent="match_wrap">
         <item name="android:layout_height">@dimen/dp40</item>
-        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
-        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
-        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
     </style>
 
-    <style name="input_edit" parent="match_match">
-        <item name="android:gravity">center</item>
-        <item name="android:paddingLeft">@dimen/dp4</item>
-        <item name="android:paddingRight">@dimen/dp4</item>
+    <style name="input_edit" parent="match_wrap">
+        <item name="android:gravity">center_vertical</item>
         <item name="android:lines">1</item>
         <item name="android:singleLine">true</item>
         <item name="android:maxLines">1</item>
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/font16</item>
+        <item name="android:paddingLeft">@dimen/dp8</item>
+        <item name="android:paddingRight">@dimen/dp8</item>
+        <item name="android:paddingTop">@dimen/dp2</item>
+        <item name="android:paddingBottom">@dimen/dp2</item>
+    </style>
+
+    <style name="view_focus_indicator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/focus_indicator_bg</item>
     </style>
 
 </resources>

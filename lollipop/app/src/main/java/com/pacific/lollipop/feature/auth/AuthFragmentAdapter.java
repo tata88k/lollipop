@@ -18,7 +18,7 @@ public class AuthFragmentAdapter extends FragmentPagerAdapter2 {
     @Override
     public Fragment getItem(int position) {
         if(position == 0){
-            return RegisterFragment.newInstance();
+            return AuthCodeFragment.newInstance();
         }
         return LoginFragment.newInstance();
     }

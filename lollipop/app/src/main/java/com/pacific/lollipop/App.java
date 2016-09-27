@@ -1,11 +1,11 @@
 package com.pacific.lollipop;
 
-import android.support.multidex.MultiDexApplication;
+import android.app.Application;
 
 /**
  * Created by root on 16-3-26.
  */
-public class App extends MultiDexApplication {
+public class App extends Application {
     private static App mInstance;
 
     @Override
