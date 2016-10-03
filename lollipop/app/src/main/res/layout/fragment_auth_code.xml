@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/match_match"
-    android:scrollbars="none"
     tools:context="com.pacific.lollipop.feature.auth.AuthCodeFragment">
 
-    <LinearLayout
-        style="@style/match_match"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:padding="@dimen/dp32">
+    <LinearLayout style="@style/auth_wrap_layout">
 
-        <RelativeLayout
-            style="@style/input_wrap_layout"
-            android:focusable="true"
-            android:focusableInTouchMode="true">
+        <RelativeLayout style="@style/input_wrap_layout">
 
             <ImageView
                 android:id="@+id/img_left"
@@ -49,7 +40,7 @@
         </RelativeLayout>
 
         <RelativeLayout style="@style/input_wrap_layout">
-            android:layout_marginTop="@dimen/dp16">
+            android:layout_marginTop="@dimen/dp24">
 
             <ImageView
                 android:id="@+id/img_left0"
@@ -62,14 +53,14 @@
                 android:id="@+id/edit_code"
                 style="@style/input_edit"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@+id/btn_code"
+                android:layout_toLeftOf="@+id/btn_get_code"
                 android:layout_toRightOf="@+id/img_left0"
                 android:background="@android:color/transparent"
                 android:hint="@string/hint_code"
                 android:inputType="textEmailAddress" />
 
             <Button
-                android:id="@+id/btn_code"
+                android:id="@+id/btn_get_code"
                 style="?android:textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -94,7 +85,7 @@
 
         <Button
             android:id="@+id/btn_next"
-            style="@style/ButtonAppTheme"
+            style="@style/app_button"
             android:layout_width="match_parent"
             android:layout_marginTop="@dimen/dp16"
             android:text="@string/next" />
@@ -103,14 +94,42 @@
             android:id="@+id/already_have_account_view"
             layout="@layout/already_have_account" />
 
-        <TextView
-            android:id="@+id/tv_popup"
+        <android.support.v7.widget.GridLayout
             style="@style/wrap_wrap"
-            android:background="@drawable/register_error_bg"
-            android:gravity="center"
-            android:padding="@dimen/dp16"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/font13"
-            android:visibility="gone" />
+            android:layout_marginTop="@dimen/dp16"
+            app:columnCount="3"
+            app:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_qq"
+                style="@style/login_type_icon"
+                android:src="@drawable/ic_share_qq" />
+
+            <ImageView
+                android:id="@+id/img_sin"
+                style="@style/login_type_icon"
+                android:src="@drawable/ic_share_sin" />
+
+            <ImageView
+                android:id="@+id/img_pocket"
+                style="@style/login_type_icon"
+                android:src="@drawable/ic_share_pocket" />
+
+            <ImageView
+                android:id="@+id/img_chat"
+                style="@style/login_type_icon"
+                android:src="@drawable/ic_share_chat" />
+
+            <ImageView
+                android:id="@+id/img_note"
+                style="@style/login_type_icon"
+                android:src="@drawable/ic_share_note" />
+
+            <ImageView
+                android:id="@+id/img_twitter"
+                style="@style/login_type_icon"
+                android:src="@drawable/ic_share_twitter" />
+        </android.support.v7.widget.GridLayout>
+
     </LinearLayout>
 </ScrollView>

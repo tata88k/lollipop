@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#4CAF50</color>
-    <color name="primary_dark">#388E3C</color>
+    <color name="primary">#ff1e9e47</color>
+    <color name="primary_dark">#ff247d42</color>
     <color name="primary_light">#C8E6C9</color>
-    <color name="accent">#8BC34A</color>
+    <color name="accent">#ff1e9e47</color>
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#757575</color>
     <color name="icons">#FFFFFF</color>
@@ -14,7 +14,7 @@
 
     <!--TutorialActivity-->
     <color name="color_green">@color/primary</color>
-    <color name="color_dark_green">@color/primary_dark</color>
+    <color name="color_dark_green">@color/dark_green</color>
 
 
     <color name="dark_green">#ff005e37</color>

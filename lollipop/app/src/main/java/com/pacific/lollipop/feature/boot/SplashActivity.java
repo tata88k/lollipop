@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 
 import com.pacific.lollipop.R;
-import com.pacific.lollipop.feature.auth.LoginActivity;
+import com.pacific.lollipop.feature.auth.AuthActivity;
 import com.pacific.lollipop.util.Cons;
 import com.pacific.lollipop.util.PrefUtil;
 import com.trello.rxlifecycle.android.ActivityEvent;
@@ -32,7 +32,7 @@ public class SplashActivity extends RxAppCompatActivity {
                 .compose(bindUntilEvent(ActivityEvent.DESTROY))
                 .subscribe((aBool) -> {
                     Intent in = new Intent();
-                    in.setClass(SplashActivity.this, LoginActivity.class);
+                    in.setClass(SplashActivity.this, AuthActivity.class);
                     in.putExtra("Tutorial", !aBool);
                     startActivity(in);
                     finish();

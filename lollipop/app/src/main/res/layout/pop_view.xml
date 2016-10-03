@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_popup"
+        style="@style/wrap_wrap"
+        android:background="@drawable/register_error_bg"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="@dimen/dp16"
+        android:text="@string/agreement"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font13" />
+</LinearLayout>

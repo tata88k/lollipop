@@ -13,11 +13,13 @@
     <string name="description_canteen_intro3">好记忆不如烂笔头，记录生活点滴，印象生活，享受轻奢</string>
     <string name="get_start">开始</string>
 
-    <string name="login">登录账号</string>
+    <string name="sign_in">登录账号</string>
+    <string name="login">登录</string>
     <string name="register">创建用户</string>
-    <string name="repeat_password">再次输入密码</string>
+
     <string name="go">确定</string>
 
+    <string name="hint_confirm_password">确认密码</string>
     <string name="hint_password">密码</string>
     <string name="hint_email">邮箱或电话</string>
     <string name="hint_code">验证码</string>
@@ -28,10 +30,14 @@
     <string name="agreement1">服务条款</string>
     <string name="agreement2">隐私条款</string>
     <string name="already_have_account">已经拥有帐户？</string>
-    <string name="sign_in">登录</string>
+
+    <string name="create_account">创建用户</string>
+    <string name="forgot_password">忘记密码</string>
+    <string name="or">或</string>
+    <string name="invalidate_email">邮箱或手机号格式不正确,请重填</string>
+    <string name="snack_close">关闭</string>
+
     <!-- Strings related to login -->
-    <string name="prompt_email">Email or Phone</string>
-    <string name="prompt_password">Password (optional)</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>

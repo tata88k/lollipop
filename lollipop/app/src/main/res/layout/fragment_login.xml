@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/match_match"
-    android:gravity="center"
-    android:orientation="horizontal"
     tools:context="com.pacific.lollipop.feature.auth.LoginFragment">
 
-    <com.pacific.lollipop.widget.InputView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp42"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin">
+    <LinearLayout style="@style/auth_wrap_layout">
 
-    </com.pacific.lollipop.widget.InputView>
-</android.support.constraint.ConstraintLayout>
+        <android.support.design.widget.TextInputLayout style="@style/match_wrap">
+
+            <AutoCompleteTextView
+                android:id="@+id/ac_email"
+                style="@style/input_edit_no_padding"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout style="@style/match_wrap">
+
+            <EditText
+                android:id="@+id/edit_password"
+                style="@style/input_edit_no_padding"
+                android:hint="@string/hint_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/app_button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp16"
+            android:text="@string/login" />
+
+        <include
+            android:id="@+id/create_account_view"
+            layout="@layout/create_account" />
+    </LinearLayout>
+</ScrollView>

@@ -7,11 +7,17 @@
     android:padding="@dimen/dp16">
 
     <TextView
+        android:id="@+id/tv_forgot"
+        style="@style/link_desc"
+        android:text="@string/forgot_password"
+        android:textAllCaps="true" />
+
+    <TextView
         style="@style/grey_desc"
-        android:text="@string/already_have_account" />
+        android:text="@string/or" />
 
     <TextView
         android:id="@+id/tv_login"
         style="@style/link_desc"
-        android:text="@string/sign_in" />
+        android:text="@string/create_account" />
 </LinearLayout>

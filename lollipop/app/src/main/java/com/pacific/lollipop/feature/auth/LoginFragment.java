@@ -1,16 +1,15 @@
 package com.pacific.lollipop.feature.auth;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.pacific.lollipop.R;
+import com.pacific.mvc.Fragment;
 
-public class LoginFragment extends Fragment {
+public class LoginFragment extends Fragment<LoginModel> {
 
     private Action action;
 
@@ -29,6 +28,7 @@ public class LoginFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
         }
+        model = new LoginModel(new LoginView(this));
     }
 
     @Override

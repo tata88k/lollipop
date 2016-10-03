@@ -38,7 +38,13 @@
         <item name="android:layout_height">match_parent</item>
     </style>
 
-    <style name="ButtonAppTheme" parent="wrap_wrap">
+
+    <style name="hint_appearance">
+        <item name="android:textSize">@dimen/font14</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="app_button" parent="wrap_wrap">
         <item name="android:minWidth">@dimen/dp56</item>
         <item name="android:background">@drawable/btn_primary_states</item>
         <item name="android:textColor">@android:color/white</item>
@@ -53,9 +59,15 @@
     </style>
 
     <style name="input_wrap_layout" parent="match_wrap">
-        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:layout_height">@dimen/dp42</item>
+    </style>
+
+    <style name="auth_wrap_layout" parent="match_match">
         <item name="android:focusable">true</item>
         <item name="android:focusableInTouchMode">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/dp32</item>
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
     <style name="input_edit" parent="match_wrap">
@@ -63,11 +75,21 @@
         <item name="android:lines">1</item>
         <item name="android:singleLine">true</item>
         <item name="android:maxLines">1</item>
-        <item name="android:textSize">@dimen/font16</item>
+        <item name="android:textSize">@dimen/font18</item>
         <item name="android:paddingLeft">@dimen/dp8</item>
         <item name="android:paddingRight">@dimen/dp8</item>
         <item name="android:paddingTop">@dimen/dp2</item>
         <item name="android:paddingBottom">@dimen/dp2</item>
+    </style>
+
+    <style name="input_edit_no_padding" parent="match_wrap">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/font18</item>
+        <item name="android:paddingLeft">@dimen/dp8</item>
+        <item name="android:paddingRight">@dimen/dp8</item>
     </style>
 
     <style name="view_focus_indicator">
@@ -75,6 +97,26 @@
         <item name="android:layout_height">1dp</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:background">@drawable/focus_indicator_bg</item>
+    </style>
+
+    <style name="login_type_icon" parent="wrap_wrap">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_margin">@dimen/dp12</item>
+    </style>
+
+    <style name="grey_desc" parent="wrap_wrap">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/font13</item>
+        <item name="android:layout_marginRight">@dimen/dp6</item>
+        <item name="android:layout_marginLeft">@dimen/dp6</item>
+    </style>
+
+    <style name="link_desc" parent="wrap_wrap">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">@dimen/font13</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 
 </resources>

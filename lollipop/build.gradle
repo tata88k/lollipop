@@ -27,7 +27,7 @@ ext {
     compile = 24
     min = 15
     target = 24
-    buildTools = "24.0.2"
+    buildTools = "24.0.3"
     support = "24.2.1"
     mvc = "0.0.4"
     adapter = "1.0.6"

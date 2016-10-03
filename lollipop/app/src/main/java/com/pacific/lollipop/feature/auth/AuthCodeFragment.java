@@ -15,16 +15,12 @@ public class AuthCodeFragment extends Fragment<AuthCodeModel> {
 
     public static AuthCodeFragment newInstance() {
         AuthCodeFragment fragment = new AuthCodeFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-        }
         model = new AuthCodeModel(new AuthCodeView(this));
     }
 
@@ -34,5 +30,9 @@ public class AuthCodeFragment extends Fragment<AuthCodeModel> {
     }
 
     public void fetchAuthCode(String str) {
+    }
+
+    public void replaceFragment(Fragment fragment, boolean isAddBack) {
+        callback.replaceFragment(R.id.fl_container, fragment, isAddBack);
     }
 }

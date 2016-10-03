@@ -7,18 +7,17 @@ import com.pacific.lollipop.R;
 import com.pacific.lollipop.feature.boot.TutorialActivity;
 import com.pacific.mvc.Activity;
 
-public class LoginActivity extends Activity<LoginModel> implements LoginFragment.Action {
+public class AuthActivity extends Activity<AuthModel> implements LoginFragment.Action {
 
     private final int REQUEST_CODE_TUTORIAL = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        model = new LoginModel(new LoginView(this));
+        setContentView(R.layout.activity_auth);
+        model = new AuthModel(new AuthView(this));
         model.onCreate();
-        boolean isTutorial = getIntent().getBooleanExtra("Tutorial", false);
-        if (isTutorial) {
+        if (getIntent().getBooleanExtra("Tutorial", false)) {
             Intent intent = new Intent(this, TutorialActivity.class);
             startActivityForResult(intent, REQUEST_CODE_TUTORIAL);
         }
