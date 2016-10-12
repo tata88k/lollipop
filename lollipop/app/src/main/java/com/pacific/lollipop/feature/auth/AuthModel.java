@@ -1,18 +1,23 @@
 package com.pacific.lollipop.feature.auth;
 
+import android.support.annotation.StringRes;
+
 import com.pacific.mvc.ActivityModel;
 
 public class AuthModel extends ActivityModel<AuthView> {
-
-    private AuthFragmentAdapter adapter;
-
-    public AuthModel(AuthView mvcView) {
-        super(mvcView);
-        adapter = new AuthFragmentAdapter(view.getController().getSupportFragmentManager());
+    public AuthModel(AuthView view) {
+        super(view);
     }
 
-    @Override
-    protected Object[] getArgs() {
-        return new Object[]{adapter};
+    public void snack(@StringRes int resId) {
+        view.snack(resId);
+    }
+
+    public void dismissSnack() {
+        view.dismissSnack();
+    }
+
+    public void setTitle(@StringRes int resId) {
+        view.setTitle(resId);
     }
 }

@@ -9,7 +9,7 @@ import android.support.v7.app.AlertDialog;
 import com.pacific.lollipop.R;
 import com.pacific.lollipop.feature.auth.AuthActivity;
 import com.pacific.lollipop.util.Cons;
-import com.pacific.lollipop.util.PrefUtil;
+import com.pacific.lollipop.util.PrefsUtil;
 import com.trello.rxlifecycle.android.ActivityEvent;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
@@ -41,14 +41,14 @@ public class SplashActivity extends RxAppCompatActivity {
 
     private void fixEnv() {
         Context app = getApplication();
-        if (!PrefUtil.contains(app, Cons.VERSION)) {
-            PrefUtil.put(app, Cons.VERSION, "0.0.0");
+        if (!PrefsUtil.contains(app, Cons.VERSION)) {
+            PrefsUtil.put(app, Cons.VERSION, "0.0.0");
         }
-        if (!PrefUtil.contains(app, Cons.USERNAME)) {
-            PrefUtil.put(app, Cons.USERNAME, "20161001");
+        if (!PrefsUtil.contains(app, Cons.USERNAME)) {
+            PrefsUtil.put(app, Cons.USERNAME, "20161001");
         }
-        if (!PrefUtil.contains(app, Cons.PASSWORD)) {
-            PrefUtil.put(app, Cons.PASSWORD, "20161001");
+        if (!PrefsUtil.contains(app, Cons.PASSWORD)) {
+            PrefsUtil.put(app, Cons.PASSWORD, "20161001");
         }
     }
 
@@ -57,9 +57,9 @@ public class SplashActivity extends RxAppCompatActivity {
         PackageManager pm = app.getPackageManager();
         try {
             String version = pm.getPackageInfo(app.getPackageName(), 0).versionName;
-            String oldVersion = PrefUtil.get(app, Cons.VERSION, version).toString();
+            String oldVersion = PrefsUtil.get(app, Cons.VERSION, version).toString();
             if (version.equals(oldVersion)) return true;
-            PrefUtil.put(app, Cons.VERSION, version);
+            PrefsUtil.put(app, Cons.VERSION, version);
             return false;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();

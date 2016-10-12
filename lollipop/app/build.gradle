@@ -47,6 +47,7 @@ dependencies {
     annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.ext.dagger2"
 
     compile "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttp3"
+    compile "com.squareup.okio:okio:$rootProject.ext.okio"
 
     compile "com.google.code.gson:gson:$rootProject.ext.gson"
     compile "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit2"
@@ -64,4 +65,5 @@ dependencies {
     compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
     compile 'com.heinrichreimersoftware:material-intro:1.5.8'
     compile 'com.binaryfork:spanny:1.0.4'
+    compile 'com.github.VictorAlbertos.RxPermissionsResult:rx1:0.0.3'
 }

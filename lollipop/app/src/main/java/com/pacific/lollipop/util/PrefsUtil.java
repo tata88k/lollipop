@@ -7,9 +7,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Map;
 
-public class PrefUtil {
+public class PrefsUtil {
 
-    private PrefUtil() {
+    private PrefsUtil() {
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 

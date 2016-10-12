@@ -2,10 +2,6 @@ package com.pacific.lollipop.util;
 
 import android.os.Build;
 
-/**
- * Created by root on 9/23/16.
- */
-
 public class LevelUtil {
 
     public static boolean level15() {

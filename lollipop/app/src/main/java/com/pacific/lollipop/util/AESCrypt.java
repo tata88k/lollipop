@@ -14,8 +14,6 @@ import javax.crypto.spec.SecretKeySpec;
 
 /**
  * Encrypt and decrypt messages using AES 256 bit encryption that are compatible with AESCrypt-ObjC and AESCrypt Ruby.
- * <p/>
- * Created by scottab on 04/10/2014.
  */
 public final class AESCrypt {
 
@@ -31,7 +29,7 @@ public final class AESCrypt {
     //AESCrypt-ObjC uses blank IV (not the best security, but the aim here is compatibility)
     private static final byte[] ivBytes = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
-    //togglable log option (please turn off in live!)
+    //toggleable log option (please turn off in live!)
     public static boolean DEBUG_LOG_ENABLED = false;
 
 

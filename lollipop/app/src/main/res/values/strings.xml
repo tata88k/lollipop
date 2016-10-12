@@ -14,7 +14,7 @@
     <string name="get_start">开始</string>
 
     <string name="sign_in">登录账号</string>
-    <string name="login">登录</string>
+    <string name="login">登录账号</string>
     <string name="register">创建用户</string>
 
     <string name="go">确定</string>
@@ -27,14 +27,16 @@
     <string name="next">下一步</string>
     <string name="get_code">获取验证码</string>
     <string name="agreement">创建帐户，表示您同意服务条款和隐私条款。</string>
-    <string name="agreement1">服务条款</string>
-    <string name="agreement2">隐私条款</string>
+    <string name="service_agreement">服务条款</string>
+    <string name="private_agreement">隐私条款</string>
     <string name="already_have_account">已经拥有帐户？</string>
+    <string name="email_error">邮箱或手机号不正确</string>
+    <string name="password_error">密码不能少于6位数</string>
 
     <string name="create_account">创建用户</string>
     <string name="forgot_password">忘记密码</string>
     <string name="or">或</string>
-    <string name="invalidate_email">邮箱或手机号格式不正确,请重填</string>
+    <string name="invalidate_email">邮箱或手机号不正确,请重填</string>
     <string name="snack_close">关闭</string>
 
     <!-- Strings related to login -->

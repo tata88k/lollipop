@@ -6,10 +6,6 @@ import dagger.Module;
 import dagger.Provides;
 import okhttp3.OkHttpClient;
 
-/**
- * Created by root on 9/16/16.
- */
-
 @Module
 public class AppModule {
 
@@ -21,13 +17,13 @@ public class AppModule {
 
     @Provides
     @Singleton
-    public App provideApp(){
+    public App provideApp() {
         return app;
     }
 
     @Provides
     @Singleton
-    public OkHttpClient okHttpClient(){
-        return  new OkHttpClient.Builder().build();
+    public OkHttpClient okHttpClient() {
+        return new OkHttpClient.Builder().build();
     }
 }

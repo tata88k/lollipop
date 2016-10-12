@@ -17,7 +17,7 @@
         android:text="@string/or" />
 
     <TextView
-        android:id="@+id/tv_login"
+        android:id="@+id/tv_create"
         style="@style/link_desc"
         android:text="@string/create_account" />
 </LinearLayout>

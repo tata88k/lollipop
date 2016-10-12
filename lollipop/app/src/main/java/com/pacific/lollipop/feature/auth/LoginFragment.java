@@ -1,17 +1,13 @@
 package com.pacific.lollipop.feature.auth;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.pacific.lollipop.R;
-import com.pacific.mvc.Fragment;
 
-public class LoginFragment extends Fragment<LoginModel> {
-
-    private Action action;
+public class LoginFragment extends AuthFragment<LoginModel> {
 
     public LoginFragment() {
     }
@@ -37,21 +33,20 @@ public class LoginFragment extends Fragment<LoginModel> {
     }
 
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof Action) {
-            action = (Action) context;
-        } else {
-            throw new RuntimeException(context.toString() + " must implement Action");
-        }
+    public void onDestroy() {
+        super.onDestroy();
+        model.onDestroy();
     }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        action = null;
+    public void gotoRegister() {
+        callback.replaceFragment(R.id.fl_container, RegisterFragment.newInstance(), true);
     }
 
-    public interface Action {
+    public void gotoPassword() {
+
+    }
+
+    public void login(String email, String password) {
+
     }
 }

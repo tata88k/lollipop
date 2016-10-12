@@ -2,12 +2,13 @@ package com.pacific.lollipop.feature.auth;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.StringRes;
 
 import com.pacific.lollipop.R;
 import com.pacific.lollipop.feature.boot.TutorialActivity;
 import com.pacific.mvc.Activity;
 
-public class AuthActivity extends Activity<AuthModel> implements LoginFragment.Action {
+public class AuthActivity extends Activity<AuthModel> implements AuthFragment.Action {
 
     private final int REQUEST_CODE_TUTORIAL = 1;
 
@@ -31,5 +32,20 @@ public class AuthActivity extends Activity<AuthModel> implements LoginFragment.A
             } else {
             }
         }
+    }
+
+    @Override
+    public void snack(@StringRes int resId) {
+        model.snack(resId);
+    }
+
+    @Override
+    public void dismissSnack() {
+        model.dismissSnack();
+    }
+
+    @Override
+    public void setTitle(@StringRes int resId) {
+        model.setTitle(resId);
     }
 }

@@ -2,19 +2,19 @@ package com.pacific.lollipop;
 
 import android.app.Application;
 
-/**
- * Created by root on 16-3-26.
- */
+import io.victoralbertos.rx1_permissions_result.RxPermissionsResult;
+
 public class App extends Application {
-    private static App mInstance;
+    private static App instance;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        mInstance = this;
+        instance = this;
+        RxPermissionsResult.register(this);
     }
 
     public static App getInstance() {
-        return mInstance;
+        return instance;
     }
 }

@@ -67,12 +67,9 @@ public class EEctivity extends AppCompatActivity implements LoaderCallbacks<Curs
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_eectivity);
         // Set up the login form.
-        mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
 
-        mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
@@ -84,16 +81,6 @@ public class EEctivity extends AppCompatActivity implements LoaderCallbacks<Curs
             }
         });
 
-        Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
-        mEmailSignInButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                attemptLogin();
-            }
-        });
-
-        mLoginFormView = findViewById(R.id.login_form);
-        mProgressView = findViewById(R.id.login_progress);
     }
 
     private void populateAutoComplete() {
@@ -162,7 +149,7 @@ public class EEctivity extends AppCompatActivity implements LoaderCallbacks<Curs
         View focusView = null;
 
         // Check for a valid password, if the user entered one.
-        if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
+        if (!TextUtils.isEmpty(password)) {
             mPasswordView.setError(getString(R.string.error_invalid_password));
             focusView = mPasswordView;
             cancel = true;
@@ -173,7 +160,7 @@ public class EEctivity extends AppCompatActivity implements LoaderCallbacks<Curs
             mEmailView.setError(getString(R.string.error_field_required));
             focusView = mEmailView;
             cancel = true;
-        } else if (!isEmailValid(email)) {
+        } else{
             mEmailView.setError(getString(R.string.error_invalid_email));
             focusView = mEmailView;
             cancel = true;
@@ -192,15 +179,7 @@ public class EEctivity extends AppCompatActivity implements LoaderCallbacks<Curs
         }
     }
 
-    private boolean isEmailValid(String email) {
-        //TODO: Replace this with your own logic
-        return email.contains("@");
-    }
 
-    private boolean isPasswordValid(String password) {
-        //TODO: Replace this with your own logic
-        return password.length() > 4;
-    }
 
     /**
      * Shows the progress UI and hides the login form.
@@ -346,6 +325,14 @@ public class EEctivity extends AppCompatActivity implements LoaderCallbacks<Curs
         protected void onCancelled() {
             mAuthTask = null;
             showProgress(false);
+        }
+
+        private boolean isEmailValid(String str) {
+            return false;
+        }
+
+        private boolean isPasswordValid(String str) {
+            return false;
         }
     }
 }
