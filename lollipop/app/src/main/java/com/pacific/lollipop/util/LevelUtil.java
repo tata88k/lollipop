@@ -4,10 +4,6 @@ import android.os.Build;
 
 public class LevelUtil {
 
-    public static boolean level15() {
-        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1;
-    }
-
     public static boolean level16() {
         return Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN;
     }

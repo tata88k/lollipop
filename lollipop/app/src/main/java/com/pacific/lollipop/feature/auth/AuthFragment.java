@@ -12,11 +12,11 @@ abstract class AuthFragment<T extends FragmentModel> extends Fragment<T> {
 
         void dismissSnack();
 
-        void setTitle(@StringRes int resId); 
+        void setTitle(@StringRes int resId);
     }
 
     protected Action action;
-    public static int pageIndex = 0;
+    protected static int pageIndex = 0;
 
     @Override
     public void onAttach(Context context) {
