@@ -11,8 +11,13 @@ android {
         applicationId "com.pacific.lollipop"
         versionCode 1
         versionName "0.0.1"
+        multiDexEnabled true
         jackOptions {
             enabled true
+        }
+
+        lintOptions {
+            abortOnError false
         }
     }
 
