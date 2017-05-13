@@ -26,14 +26,7 @@
             android:name=".feature.auth.AuthActivity"
             android:label="" />
 
-        <meta-data
-            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
-            android:value="GlideModule" />
-
         <activity android:name=".feature.boot.TutorialActivity" />
-        <activity
-            android:name=".EEctivity"
-            android:label="@string/title_activity_eectivity"></activity>
     </application>
 
 </manifest>
