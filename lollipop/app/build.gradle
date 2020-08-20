@@ -1,23 +1,13 @@
-apply from: "../gradle/app_module.gradle"
+apply plugin: 'com.android.application'
+apply from: "../gradle/android_module.gradle"
 
 android {
-
     defaultConfig {
-        applicationId "com.pacific.lollipop"
-        minSdkVersion 15
-    }
-
-    dataBinding {
-        enabled = true
+        applicationId "com.pacific.app.lollipop"
     }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile dep.theAdapter
-    compile dep.parceler
-    annotationProcessor dep.parcelerProcessor
-    compile "com.heinrichreimersoftware:material-intro:$rootProject.ext.material_intro"
-    compile "com.binaryfork:spanny:$rootProject.ext.spanny"
-    compile dep.rxPermissions
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':app-main')
 }

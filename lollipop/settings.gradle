@@ -1,1 +1,4 @@
+include ':app-main'
 include ':app'
+include ':app-data'
+include ':app-core'
