@@ -2,8 +2,7 @@ package com.pacific.app.lollipop.main.dagger
 
 import com.pacific.app.lollipop.core.dagger.CoreComponent
 import com.pacific.app.lollipop.core.dagger.FeatureScope
-import com.pacific.app.lollipop.core.dagger.ViewModelFactoryBinder
-import com.pacific.app.lollipop.core.dagger.ViewModelFactoryProvider
+import com.pacific.app.lollipop.core.dagger.ViewModelFactoryComponent
 import com.pacific.app.lollipop.data.DataComponent
 import dagger.Component
 
@@ -17,7 +16,7 @@ import dagger.Component
     ]
 )
 @FeatureScope
-interface MainComponent : ViewModelFactoryProvider {
+interface MainComponent : ViewModelFactoryComponent {
 
     @Component.Factory
     interface Factory {

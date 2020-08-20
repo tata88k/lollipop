@@ -2,7 +2,7 @@ package com.pacific.app.lollipop.core.dagger
 
 import androidx.lifecycle.ViewModelProvider
 
-interface ViewModelFactoryProvider {
+interface ViewModelFactoryComponent {
 
     fun viewModelFactory(): ViewModelProvider.Factory
 }
